@@ -34,16 +34,10 @@ ScrollReveal().reveal('.hero-text h1, .hero-text p, .Download-button, .hero-btn2
 ScrollReveal().reveal('.hero-img a', { delay: 500, origin: 'bottom' });
 
 ScrollReveal().reveal('.featured_text h1, .featured_text p, .download-button2', { ...revealOptions, origin: 'right' });
-ScrollReveal().reveal('.featuredimg', { delay: 500, origin: 'bottom' });
 
-ScrollReveal().reveal('.featured_text h1, .featured_text p, .download-button2', { ...revealOptions, origin: 'right' });
-ScrollReveal().reveal('.featuredimg', { delay: 500, origin: 'bottom' });
-
-ScrollReveal().reveal('.featured_text h1, .featured_text p, .download-button2', { ...revealOptions, origin: 'right' });
-ScrollReveal().reveal('.featuredimg', { delay: 500, origin: 'bottom' });
 
 ScrollReveal().reveal('.swiper ', { ...revealOptions, origin: 'right' });
-ScrollReveal().reveal('.featuredimg', { delay: 400, origin: 'bottom' });
+
 
 ScrollReveal().reveal('.accordion ', { ...revealOptions, origin: 'left' });
 ScrollReveal().reveal('.featuredimg', { delay: 400, origin: 'bottom' });

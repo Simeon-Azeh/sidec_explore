@@ -1070,9 +1070,208 @@ footer .copyright {
     display: none;
 }
 
+/* Team page */
+.main2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main2 .professional_list {
+  
+}
+ .professional_list ul li {
+  margin-top: 20px;
+  list-style: none;
+  font-size: 1.1em;
+  color: var(--first-color);
+}
+.professional_list ul li i {
+  margin-right: 10px;
+  color: var(--first-color);
+  font-size: 1.2em;
+}
+.professional_list ul li span {
+  color: var(--second-color);
+  font-size: 1.1em;
+ font-weight: 500;
+}
+.main3 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main3 .container .admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ flex-direction: row;
+
+}
+.main3 .container .admin .admin_img {
+  width: 100%;
+  height: 400px;
+
+}
+.main3 .container .admin .admin_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+ 
+}
+.main3 {
+  background: var(--body-bg-color);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.main3 .container .admin .admin_card {
+  background: var(--body-bg-color);
+  margin-left: 20px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.main3 .container .admin .admin_card .admin_info {
+  margin-top: 20px;
+}
+
+.main3 .container .admin .admin_card .admin_info h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--first-color);
+}
+.main3 .container .admin .admin_card .admin_info p {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--second-color);
+}
+.main3 .container .admin .admin_card i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 1.3em;
+  color: var(--first-color);
+  cursor: pointer;
+}
 
 /* Media Queries */
 
+.main3 .container .admin2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ flex-direction: row;
+ margin-top: 40px;
+
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between; /* To distribute the cards evenly */
+
+}
+.main3 .container .admin2 .admin_img {
+  width: 100%;
+  height: 400px;
+
+}
+.main3 .container .admin2 .admin_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+ 
+}
+
+.main3 .container .admin2 .admin_card {
+  background: var(--body-bg-color);
+  margin-left: 20px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  width: calc(33.33% - 20px); /* Adjust the width based on your preference */
+  margin-top: 20px;
+}
+.main3 .container .admin2 .admin_card .admin_info {
+  margin-top: 20px;
+}
+
+.main3 .container .admin2 .admin_card .admin_info h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--first-color);
+}
+.main3 .container .admin2 .admin_card .admin_info p {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--second-color);
+}
+.main3 .container .admin2 .admin_card i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 1.3em;
+  color: var(--first-color);
+  cursor: pointer;
+}
+/* Modals */
+.portfolio-model {
+  z-index: 9999999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: .3s ease;
+  opacity: 0;
+  display: none;
+}
+
+
+.portfolio-model.active {
+  display: block;
+  opacity: 1;
+}
+
+/* .modal-open {
+  display: block;
+} */
+
+.modal-close {
+  display: none;
+}
+
+.portfolio-model-body {
+  position: relative;
+  background: var(--modal-bg-color);
+  height: 100%;
+  padding: 40px;
+  border-radius: 0; /* No border-radius for full-screen */
+  box-shadow: var(--box-shadow);
+  transition: .5s ease;
+}
+
+.portfolio-model.active .portfolio-model-body {
+  transform: translateY(0);
+}
+
+.portfolio-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--third-color);
+}
+
+/* Additional styling as needed */
+
+
+
+/* Media Queries */
 @media screen and (max-width: 1012px) {
    #navbar {
     display: flex;

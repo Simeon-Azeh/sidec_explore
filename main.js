@@ -45,7 +45,7 @@ ScrollReveal().reveal('.accordion, .blog_main_heading ', { ...revealOptions, ori
 ScrollReveal().reveal('.featuredimg, .blog-btn ', { delay: 400, origin: 'bottom' });
 ScrollReveal().reveal('.follow, .second_blog ', { ...revealOptions, origin: 'right' });
 ScrollReveal().reveal('footer .logo', { delay: 300, origin: 'bottom' });
-ScrollReveal().reveal('.main_links, .copyright, .optional_links, .first_blog', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.main_links, .optional_links, .first_blog', { delay: 500, origin: 'left' });
 
 
 ScrollReveal().reveal('.about-content p, .copyright p', { ...revealOptions, origin: 'left' });

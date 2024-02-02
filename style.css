@@ -1073,7 +1073,7 @@ footer .copyright {
 
 /* Media Queries */
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1012px) {
    #navbar {
     display: flex;
     flex-direction: column;
@@ -1184,19 +1184,20 @@ footer .container {
 }
 
 @media screen and (max-width: 499px) {
+
     .continue-application {
         display: none;
     } 
     .hero-btn2 {
-        right: 20%;
-        bottom: -140px;
-    }
+      right: 20%;
+      bottom: -40px;
+  }
     #hero .hero-img {
         width: 100%;
         margin-left: 0;
     }
     .section-p1 {
-        padding: 0px 20px;
+        padding: 0px 60px;
     }
     #featured .container,
     #discovery .container {
@@ -1207,5 +1208,6 @@ footer .container {
         width: 100%;
         margin-bottom: 40px;
     }
+    
 
 }

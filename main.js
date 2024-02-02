@@ -17,8 +17,6 @@ var swiper = new Swiper(".client-swiper", {
     },
 });
 
-// Trigger reveal for hero image immediately after the page loads
-ScrollReveal().reveal('.hero-img a', { origin: 'bottom' });
 
 // Scroll animation
 ScrollReveal({

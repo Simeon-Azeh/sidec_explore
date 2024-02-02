@@ -16,6 +16,10 @@ var swiper = new Swiper(".client-swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// Trigger reveal for hero image immediately after the page loads
+ScrollReveal().reveal('.hero-img a', { origin: 'bottom' });
+
 // Scroll animation
 ScrollReveal({
     reset: true,
@@ -31,7 +35,7 @@ const revealOptions = {
 
 // Replace the following with your specific classes and IDs
 ScrollReveal().reveal('.hero-text h1, .hero-text p, .Download-button, .hero-btn2', { ...revealOptions, origin: 'left' });
-ScrollReveal().reveal('.hero-img a', { delay: 500, origin: 'bottom' });
+
 
 ScrollReveal().reveal('.featured_text h1, .featured_text p, .download-button2', { ...revealOptions, origin: 'right' });
 

@@ -38,13 +38,13 @@ ScrollReveal().reveal(
 );
 
 ScrollReveal().reveal(
-  ".featured_text h1, .featured_text p, .download-button2",
+  ".featured_text h1, .featured_text p, .download-button2, .subscribe-btn",
   { ...revealOptions, origin: "right" }
 );
 
 ScrollReveal().reveal(".swiper ", { ...revealOptions, origin: "right" });
 
-ScrollReveal().reveal(".accordion, .blog_main_heading ", {
+ScrollReveal().reveal(".accordion, .blog_main_heading, .subscribe ", {
   ...revealOptions,
   origin: "left",
 });

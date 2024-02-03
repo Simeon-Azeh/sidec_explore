@@ -44,15 +44,15 @@ ScrollReveal().reveal(
 
 ScrollReveal().reveal(".swiper, .contact-info ", { ...revealOptions, origin: "right" });
 
-ScrollReveal().reveal(".accordion, .blog_main_heading, .subscribe ", {
+ScrollReveal().reveal(".accordion, .blog_main_heading, .subscribe, .subscribe-btn ", {
   ...revealOptions,
   origin: "left",
 });
-ScrollReveal().reveal(".featuredimg, .blog-btn ", {
+ScrollReveal().reveal(".featuredimg, .blog-btn,  ", {
   delay: 400,
   origin: "bottom",
 });
-ScrollReveal().reveal(".follow, .second_blog,   ", {
+ScrollReveal().reveal(".follow, .second_blog, .hero-image2  ", {
   ...revealOptions,
   origin: "right",
 });

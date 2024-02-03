@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="swiper-bundle.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="team.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +18,8 @@
         <nav id="navbar">
             <ul>
                 <li><a href="index.html" >Home</a></li>
-                <li><a href="index.html" >About</a></li>
-                <li><a href="about.html" class="active">Team</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
                 <li><a href="index.html">Store</a></li>
                 <li><a href="index.html">Contact</a></li>
                 <a href="#" id="close"><i class="ri-close-fill"></i></a>
@@ -51,104 +51,322 @@
             </div>
           <div class="container">
             <div class="admin">
-                <div class="admin_card" onclick="openModal()">
-                    <div class="admin_img">
-                        <img src="images/about-img.png" alt="">
+                <div class="admin_card">
+                  <div class="admin_img">
+                    <img src="images/about-img.png" alt="">
+                  </div>
+                  <div class="admin_info">
+                    <h1>Simeon Azeh</h1>
+                    <p>Co-founder(CEO) & Developer</p>
+                    <div class="media">
+                        <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                        <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                        <a href="" class="media-icons ri-instagram-fill"></a>
+                        <a href="" class="media-icons ri-whatsapp-fill"></a>
                     </div>
-                    <div class="admin_info">
-                        <h1>Simeon Azeh</h1>
-                        <p>Co-founder(CEO) & Developer</p>
-                    </div>
-                    <i class="ri-arrow-right-line"></i>
-
-                    <!-- Modal -->
-                    <div class="portfolio-model inactive">
-                        <div class="portfolio-model-body">
-                            <i class="ri-close-fill portfolio-close-btn" onclick="closeModal()"></i>
-                            <h3>Sidec</h3>
-                            <img src="Images/project.png" alt="">
-                            <p>Sidec is a platform that allows users to find questions, book tutors, and take practice exams...</p>
-                            <!-- Add more details here -->
-                            <a href="https://explore.sidecedu.com" target="_blank">Join our waitlist <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+                  <button class="openBtn ri-arrow-right-s-line" data-modal="myModal1"></button>
+                  <!-- Modal -->
+                  <div id="myModal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <button class="backBtn  ri-close-line"></button>
+                     <div class="container">
+                        <div class="modal-img">
+                          <img src="images/about-img.png" alt="">
                         </div>
+                        <div class="modal-text">
+                          <p>Simeon  is passionate Co-founder and frontend developer at ALU Rwanda. With over four years of experience in software development for students, Simeon has been incharge of building our entire frontend framework. He has a deep understanding of user experience and design. His diverse skill set includes technical expertise and proficiency in design and branding, attention to details, and management. All of which he combines to develop user friendly web applications. He is also passionate about Education and Technology. At Sidec, we are eager to collaborate with like-minded individuals who share a passion for innovation in education. Education is not a one-size-fits-all concept, and We are committed to creating solutions that cater to diverse learning styles and needs.</p>
+                          <div class="media">
+                            <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                            <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                            <a href="" class="media-icons ri-instagram-fill"></a>
+                            <a href="" class="media-icons ri-whatsapp-fill"></a>
+                        </div>
+                        </div>
+                     </div>
                     </div>
+                  </div>
                 </div>
-                
-               
+              
                 <div class="admin_card">
-                    <div class="admin_img">
-                        <img src="images/PXL_20230423_104847067.PORTRAIT~2 (2).jpg" alt="">
+                  <div class="admin_img">
+                    <img src="images/PXL_20230423_104847067.PORTRAIT~2 (2).jpg" alt="">
+                  </div>
+                  <div class="admin_info">
+                    <h1>Junior Foryoung</h1>
+                    <p>Co-Founder(CTO) & Developer</p>
+                    <div class="media">
+                        <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                        <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                        <a href="" class="media-icons ri-instagram-fill"></a>
+                        <a href="" class="media-icons ri-whatsapp-fill"></a>
                     </div>
-                    <div class="admin_info">
-                        <h1>Junior Foryoung</h1>
-                        <p>Co-Founder(CTO) & Developer</p>
+                   
+                  </div>
+                 
+                  <button class="openBtn ri-arrow-right-s-line" data-modal="myModal2"></button>
+                  <!-- Modal -->
+                  <div id="myModal2" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <button class="backBtn  ri-close-line"></button>
+                     <div class="container">
+                        <div class="modal-img">
+                          <img src="images/PXL_20230423_104847067.PORTRAIT~2 (2).jpg" alt="">
+                        </div>
+                        <div class="modal-text">
+                          <p>Junior  is an innovative Co-founder and full stack developer at University of Bambili, Cameroon. With over four years of experience in software development for students, He has a deep understanding of their needs. His diverse skill set includes technical expertise and proficiency in sales, marketing, and management. Junior envisions revolutionizing the Edtech sector by creating solutions that empower students and educators through technology. At Sidec, we are eager to collaborate with like-minded individuals who share a passion for innovation in education. Education is not a one-size-fits-all concept, and We are committed to creating solutions that cater to diverse learning styles and needs.</p>
+                          <div class="media">
+                            <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                            <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                            <a href="" class="media-icons ri-instagram-fill"></a>
+                            <a href="" class="media-icons ri-whatsapp-fill"></a>
+                        </div>
+                        </div>
+                     </div>
                     </div>
-                    <i class="ri-arrow-right-line"></i>
+                  </div>
+                 
                 </div>
-            </div>
+              </div>
+              
             <div class="admin2">
-               
-               
                 <div class="admin_card">
                     <div class="admin_img">
-                        <img src="images/olannni.png" alt="">
+                      <img src="images/olannni.png" alt="">
                     </div>
                     <div class="admin_info">
-                        <h1>Olufemi Olaniyi</h1>
-                        <p>Project Manager</p>
+                      <h1>Olufemi Olaniyi</h1>
+                      <p>Project Manager</p>
+                      <div class="media">
+                          <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                          <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                          <a href="" class="media-icons ri-instagram-fill"></a>
+                          <a href="" class="media-icons ri-whatsapp-fill"></a>
+                      </div>
                     </div>
-                    <i class="ri-arrow-right-line"></i>
-                </div>
-                <div class="admin_card">
+                    <button class="openBtn ri-arrow-right-s-line" data-modal="myModal1"></button>
+                    <!-- Modal -->
+                    <div id="myModal3" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <button class="backBtn  ri-close-line"></button>
+                       <div class="container">
+                          <div class="modal-img">
+                            <img src="images/olannni.png" alt="">
+                          </div>
+                          <div class="modal-text">
+                            <p>Olaniyi Olufemi is a Creative Designer from Nigeria with over three years of experience working in Marketing, Branding, E.V, IT and Ed-Tech Industries.</p>
+                            <div class="media">
+                              <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                              <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                              <a href="" class="media-icons ri-instagram-fill"></a>
+                              <a href="" class="media-icons ri-whatsapp-fill"></a>
+                          </div>
+                          </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!--Second card-->
+                  <div class="admin_card">
                     <div class="admin_img">
-                        <img src="images/sebbb.png" alt="">
+                      <img src="images/sebbb.png" alt="">
                     </div>
                     <div class="admin_info">
-                        <h1>Elomba Sebastien</h1>
-                        <p>Director, field ops</p>
+                      <h1>Elomba Sebastien</h1>
+                      <p>Director, Field ops</p>
+                      <div class="media">
+                          <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                          <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                          <a href="" class="media-icons ri-instagram-fill"></a>
+                          <a href="" class="media-icons ri-whatsapp-fill"></a>
+                      </div>
                     </div>
-                    <i class="ri-arrow-right-line"></i>
+                    <button class="openBtn ri-arrow-right-s-line" data-modal="myModal1"></button>
+                    <!-- Modal -->
+                    <div id="myModal4" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <button class="backBtn  ri-close-line"></button>
+                       <div class="container">
+                          <div class="modal-img">
+                            <img src="images/sebbb.png" alt="">
+                          </div>
+                          <div class="modal-text">
+                            <p>Opps! No data to show yet!</p>
+                            <div class="media">
+                              <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                              <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                              <a href="" class="media-icons ri-instagram-fill"></a>
+                              <a href="" class="media-icons ri-whatsapp-fill"></a>
+                          </div>
+                          </div>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+              <!--Third card-->
+              <div class="admin_card">
+                <div class="admin_img">
+                  <img src="images/rose.png" alt="">
                 </div>
-                <div class="admin_card">
-                    <div class="admin_img">
+                <div class="admin_info">
+                  <h1>Mbokojong Rosette</h1>
+                  <p>Brand manager</p>
+                  <div class="media">
+                      <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                      <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                      <a href="" class="media-icons ri-instagram-fill"></a>
+                      <a href="" class="media-icons ri-whatsapp-fill"></a>
+                  </div>
+                </div>
+                <button class="openBtn ri-arrow-right-s-line" data-modal="myModal1"></button>
+                <!-- Modal -->
+                <div id="myModal5" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <button class="backBtn  ri-close-line"></button>
+                   <div class="container">
+                      <div class="modal-img">
                         <img src="images/rose.png" alt="">
-                    </div>
-                    <div class="admin_info">
-                        <h1>Mbokojong Rosette</h1>
-                        <p>Brand manager</p>
-                    </div>
-                    <i class="ri-arrow-right-line"></i>
+                      </div>
+                      <div class="modal-text">
+                        <p>Rosette is a Cameroonian with two years of working as a Social media Marketing Specialist with a global tech company.</p>
+                        <div class="media">
+                          <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                          <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                          <a href="" class="media-icons ri-instagram-fill"></a>
+                          <a href="" class="media-icons ri-whatsapp-fill"></a>
+                      </div>
+                      </div>
+                   </div>
+                  </div>
                 </div>
-                <div class="admin_card">
-                    <div class="admin_img">
+              </div>
+
+              <!--Fourth card-->
+              <div class="admin_card">
+                <div class="admin_img">
+                  <img src="images/christian.png" alt="">
+                </div>
+                <div class="admin_info">
+                  <h1>Loue Christian</h1>
+                  <p>Associate developer</p>
+                  <div class="media">
+                      <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                      <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                      <a href="" class="media-icons ri-instagram-fill"></a>
+                      <a href="" class="media-icons ri-whatsapp-fill"></a>
+                  </div>
+                </div>
+                <button class="openBtn ri-arrow-right-s-line" data-modal="myModal1"></button>
+                <!-- Modal -->
+                <div id="myModal6" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <button class="backBtn  ri-close-line"></button>
+                   <div class="container">
+                      <div class="modal-img">
                         <img src="images/christian.png" alt="">
-                    </div>
-                    <div class="admin_info">
-                        <h1>Loue Christian</h1>
-                        <p>Associate developer</p>
-                    </div>
-                    <i class="ri-arrow-right-line"></i>
+                      </div>
+                      <div class="modal-text">
+                        <p>Opps! No data to show yet!</p>
+                        <div class="media">
+                          <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                          <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                          <a href="" class="media-icons ri-instagram-fill"></a>
+                          <a href="" class="media-icons ri-whatsapp-fill"></a>
+                      </div>
+                      </div>
+                   </div>
+                  </div>
                 </div>
-                <div class="admin_card">
-                    <div class="admin_img">
+              </div>
+              
+
+              <div class="admin_card">
+                <div class="admin_img">
+                  <img src="images/nkah.png" alt="">
+                </div>
+                <div class="admin_info">
+                  <h1>Chambeline Nkah</h1>
+                  <p>Data scientist</p>
+                  <div class="media">
+                      <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                      <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                      <a href="" class="media-icons ri-instagram-fill"></a>
+                      <a href="" class="media-icons ri-whatsapp-fill"></a>
+                  </div>
+                </div>
+                <button class="openBtn ri-arrow-right-s-line" data-modal="myModal7"></button>
+                <!-- Modal -->
+                <div id="myModal7" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <button class="backBtn  ri-close-line"></button>
+                   <div class="container">
+                      <div class="modal-img">
                         <img src="images/nkah.png" alt="">
-                    </div>
-                    <div class="admin_info">
-                        <h1>Nkah Chambeline</h1>
-                        <p>Data scientist </p>
-                    </div>
-                    <i class="ri-arrow-right-line"></i>
+                      </div>
+                      <div class="modal-text">
+                        <p>Chambeline is a Data Scientist from Cameroon that seek ways in which we can make use of big data to tackle the complex challenges faced by the world. She embraces an open-minded approach with the understanding that every day presents a new opportunity for new knowledge.</p>
+                        <div class="media">
+                          <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                          <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                          <a href="" class="media-icons ri-instagram-fill"></a>
+                          <a href="" class="media-icons ri-whatsapp-fill"></a>
+                      </div>
+                      </div>
+                   </div>
+                  </div>
                 </div>
-                <div class="admin_card">
-                    <div class="admin_img">
+              </div>
+
+              
+              <div class="admin_card">
+                <div class="admin_img">
+                  <img src="images/tkay.png" alt="">
+                </div>
+                <div class="admin_info">
+                  <h1>Tamanda Kaunda</h1>
+                  <p>Graphic Designer</p>
+                  <div class="media">
+                      <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                      <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                      <a href="" class="media-icons ri-instagram-fill"></a>
+                      <a href="" class="media-icons ri-whatsapp-fill"></a>
+                  </div>
+                </div>
+                <button class="openBtn ri-arrow-right-s-line" data-modal="myModal9"></button>
+                <!-- Modal -->
+                <div id="myModal9" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <button class="backBtn  ri-close-line"></button>
+                   <div class="container">
+                      <div class="modal-img">
                         <img src="images/tkay.png" alt="">
-                    </div>
-                    <div class="admin_info">
-                        <h1>Tamanda Kaunda</h1>
-                        <p>Graphic Designer</p>
-                    </div>
-                    <i class="ri-arrow-right-line"></i>
+                      </div>
+                      <div class="modal-text">
+                        <p>Opps! Nothing to show yet!</p>
+                        <div class="media">
+                          <a href="" class="media-icons ri-linkedin-box-fill"></a>
+                          <a href="" class="media-icons ri-facebook-circle-fill"></a>
+                          <a href="" class="media-icons ri-instagram-fill"></a>
+                          <a href="" class="media-icons ri-whatsapp-fill"></a>
+                      </div>
+                      </div>
+                   </div>
+                  </div>
                 </div>
+              </div>
+
+             
+               
             </div>
           </div>
         </section>

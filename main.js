@@ -16,27 +16,7 @@ var swiper = new Swiper(".client-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-// Selectors
-function openModal() {
-  const portfolioModal = document.querySelector(".portfolio-model");
-  portfolioModal.classList.add("active");
-}
 
-function closeModal() {
-  const portfolioModal = document.querySelector(".portfolio-model");
-  portfolioModal.classList.remove("active");
-  //   console.log("Closing modal"); // Add this line for debugging
-  //   var closeBtn = document.querySelector(".portfolio-close-btn");
-  //   var portfolioModal = closeBtn.closest(".portfolio-model");
-  //   portfolioModal.classList.remove("active");
-  //   console.log(portfolioModal.classList.value);
-}
-
-// Example: Add onclick attribute to each admin_card to open the modal
-var adminCards = document.getElementsByClassName("admin_card");
-for (var i = 0; i < adminCards.length; i++) {
-  adminCards[i].addEventListener("click", openModal);
-}
 
 // Scroll animation
 ScrollReveal({
@@ -128,4 +108,34 @@ if (mobileIcon) {
   mobileIcon.addEventListener("click", () => {
     nav.classList.toggle("active");
   });
-}
+};
+// Modal script
+var modals = document.querySelectorAll(".modal");
+var Openbtns = document.querySelectorAll(".openBtn");
+var backBtns = document.querySelectorAll(".backBtn");
+
+// Check if elements are found
+if (modals.length === Openbtns.length && modals.length === backBtns.length) {
+  Openbtns.forEach(function (btn, index) {
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modals[index].style.display = "block";
+    };
+
+    // When the user clicks on the "Back" button, close the modal
+    backBtns[index].onclick = function () {
+      modals[index].style.display = "none";
+    };
+  });
+
+  // When the user clicks anywhere outside of any modal, close it
+  window.onclick = function (event) {
+    modals.forEach(function (modal) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  };
+} else {
+  console.error("Modal elements not found. Check your HTML and script placement.");
+};

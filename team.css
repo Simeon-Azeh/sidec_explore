@@ -1508,7 +1508,7 @@ footer .container {
         margin-left: 0;
     }
     .section-p1 {
-        padding: 0px 60px;
+        padding: 0px 40px;
     }
     #featured .container,
     #discovery .container {
@@ -1518,6 +1518,13 @@ footer .container {
     #featured .featured_text {
         width: 100%;
         margin-bottom: 40px;
+    }
+    #featured .container, #discovery .container {
+        width: 100%;
+    }
+    .modal-content .container {
+        overflow: auto;
+        width: 100%;
     }
     
 

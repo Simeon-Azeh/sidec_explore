@@ -1508,19 +1508,23 @@ footer .container {
         margin-left: 0;
     }
     .section-p1 {
-        padding: 0px 40px;
+        padding: 0px 45px;
     }
     #featured .container,
     #discovery .container {
      
         flex-direction: column;
     }
-    #featured .featured_text {
-        width: 100%;
-        margin-bottom: 40px;
+  
+    #featured .featured_text h1 {
+      padding-top: 40px;
     }
     #featured .container, #discovery .container {
         width: 100%;
+    }
+    .main3 .container .admin,
+    .main3 .container .admin2 {
+        padding-right: 20px;
     }
     .modal-content .container {
         overflow: auto;

@@ -42,7 +42,7 @@ ScrollReveal().reveal(
   { ...revealOptions, origin: "right" }
 );
 
-ScrollReveal().reveal(".swiper ", { ...revealOptions, origin: "right" });
+ScrollReveal().reveal(".swiper, .contact-info ", { ...revealOptions, origin: "right" });
 
 ScrollReveal().reveal(".accordion, .blog_main_heading, .subscribe ", {
   ...revealOptions,

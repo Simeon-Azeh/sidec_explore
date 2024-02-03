@@ -1508,7 +1508,7 @@ footer .container {
         margin-left: 0;
     }
     .section-p1 {
-        padding: 0px 45px;
+        padding: 0px 55px;
     }
     #featured .container,
     #discovery .container {
@@ -1526,10 +1526,36 @@ footer .container {
     .main3 .container .admin2 {
         padding-right: 20px;
     }
-    .modal-content .container {
-        overflow: auto;
+    .modal-content {
         width: 100%;
+        padding: 0px;
     }
-    
+    .modal-content .container .modal-img {
+        width: 60%;
+        height: 60%;
+        padding: 0px;
 
+    }
+    .modal-content .container .modal-img img {
+     
+        margin-top: 50px;
+    }
+    .modal-content .container .modal-text {
+        width: 60%;
+        text-align: left;
+        line-height: 1;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--first-color);
+    }
+    .modal-content .container .modal-text p {
+        font-size: 0.8em;
+    }
+
+    .modal-content .container {
+        overflow: hidden;
+        width: 90%;
+        gap: 0px;
+    }
+   
 }

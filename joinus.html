@@ -63,14 +63,14 @@
                         <p class="waiit-text">Give us uptill a week to process your application</p>
                     </div>
                    <div class="subscribe">
-                    <form action="submit_form.php" method="post">
-                       
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="41821b26-2882-4c25-bcf6-cb18cfd53e85">
                           <!-- Basic Information -->
                           <label for="name">Full Name <span>*</span></label>
                           <input type="text" id="name" name="name" placeholder="Enter your name"   required>
 
-                          <label for="email">Email <span>*</span></label>
-                          <input type="email" placeholder="Enter your email">
+                          <label for="emailid">Email <span>*</span></label>
+                          <input type="email" id="emailid" placeholder="Enter your email">
 
                           <label for="country">Country <span>*</span></label>
                           <select id="country" name="country" required>
@@ -109,7 +109,7 @@
                         <label for="why">What makes you a great fit for our team?</label>
                         <textarea id="why" name="why" rows="4" cols="50" placeholder="Enter your answer" required></textarea>
                        
-                        <button class="subscribe-btn">Apply</button>
+                        <button type="submit" class="subscribe-btn">Submit</button>
                         </form>
                         
                         
@@ -177,7 +177,7 @@
     </footer>
 
     <!-- ... (existing script and library includes) ... -->
-      
+     <script src="https://smtpjs.com/v3/smtp.js"></script> 
     <script src="swiper-bundle.min.js"></script>
     <script src="main.js"></script>
     <script>

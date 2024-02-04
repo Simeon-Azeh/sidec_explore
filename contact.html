@@ -67,18 +67,22 @@
                         <p>We typically respond in 24 hours, so please be patient.</p>
                     </div>
                    <div class="subscribe">
-                    <label for="uname">Name <span>*</span></label>
-                    <input type="text" id="uname" placeholder="Enter your name">
-                    
-                    <label for="email2">Email <span>*</span></label>
-                       <input type="email" id="email2" placeholder="Enter your email">
-
-                       <label for="subject">Subject</label>
-                       <input type="text" id="subject">
-                     <label for="message">Message</label>
-                       <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                   </div>
-                   <button class="subscribe-btn">Send <i class="fa-regular fa-paper-plane"></i></button>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="1fdcc7e9-db62-48d2-bb45-63af8e06a76f">
+                        <label for="name">Name <span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        
+                        <label for="email">Email <span>*</span></label>
+                           <input type="email" id="email" name="email" placeholder="Enter your email">
+    
+                           <label for="subject">Subject</label>
+                           <input type="text" id="subject" placeholder="Enter subject" >
+                             <label for="message">Message</label>
+                           <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                       </div>
+                       <button class="subscribe-btn">Send <i class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+                  
                 </div>
                
             </div>

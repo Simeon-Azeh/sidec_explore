@@ -62,14 +62,15 @@
                         <p class="waiit-text">Please ensure your email is correct, an invoice will be sent to your email!</p>
                     </div>
                    <div class="subscribe">
-                    <form action="submit_form.php" method="post">
+                    <form  action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="766d05dd-1e33-434d-b8e0-1e04c8a53c7a">
                        
                           <!-- Basic Information -->
                           <label for="name">Full Name <span>*</span></label>
                           <input type="text" id="name" name="name" placeholder="Enter your name"   required>
 
                           <label for="email">Email <span>*</span></label>
-                          <input type="email" placeholder="Enter your email">
+                          <input type="email" name="email" placeholder="Enter your email">
 
                             <!-- Choose between support and partnership -->
                               <!-- Choose between support and partnership using a dropdown -->
@@ -114,7 +115,7 @@
                                 </select>
                             </div>
                        
-                        <button class="subscribe-btn">Send Invoice</button>
+                        <button class="subscribe-btn" type="submit">Send Invoice</button>
                         </form>
                         
                         

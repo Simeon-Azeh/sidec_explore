@@ -118,6 +118,7 @@ nav ul li a.active::after {
     width: 80%;
 }
 
+
 .continue-application {
     --color: #fff;
     --background: #9835ff;

@@ -88,16 +88,27 @@
                               <option value="brand-manager">Brand Manager</option>
                               <option value="ambassador">Ambassador</option>
                               <option value="app-developer">App Developer</option>
-                              <option value="other">Other</option>
+                              <option value="test-user">Test user</option>
                           </select>
-                          <label for="dob">Date of Birth <span>*</span></label>
-                          <input type="date" id="dob" name="dob" required>
+                         
 
                                <!-- If 'Other' is selected, show an additional input -->
                         <div id="other-role-input" style="display: none;">
-                            <label for="other-role">Specify other role:</label>
-                            <input type="text" id="other-role" name="other-role">
+                            <label for="other-role">Affiliate</label>
+                            <select name="other-role" id="other-role">
+                                <option value="urega">Urega Foundation</option>
+                                <option value="African Leadership University Rwanda">ALU Rwanda</option>
+                                <option value="rhimbs">RHIMBS BUEA</option>
+                                <option value="ub">UB BUEA</option>
+                                <option value="uba">UB Bamenda</option>
+                                <option value="gbhs-limbe">GBHS Limbe</option>
+                                <option value="gbhs-buea">GBHS Buea</option>
+                                <option value="other">Did not find my school</option>
+                            </select>
+                           
                         </div>
+                        <label for="dob">Date of Birth <span>*</span></label>
+                        <input type="date" id="dob" name="dob" required>
 
                         <label for="gender">Gender <span>*</span></label>
                         <select id="gender" name="gender" required>
@@ -177,15 +188,21 @@
     </footer>
 
     <!-- ... (existing script and library includes) ... -->
-     <script src="https://smtpjs.com/v3/smtp.js"></script> 
+   
     <script src="swiper-bundle.min.js"></script>
     <script src="main.js"></script>
     <script>
-        // Script to toggle visibility of 'other-role-input' based on role selection
         document.getElementById('role').addEventListener('change', function() {
             var otherRoleInput = document.getElementById('other-role-input');
-            otherRoleInput.style.display = this.value === 'other' ? 'block' : 'none';
+            if (this.value === 'test-user') {
+                otherRoleInput.style.display = 'block';
+            } else {
+                otherRoleInput.style.display = 'none';
+            }
         });
     </script>
+    
+    
+    
 </body>
 </html>
